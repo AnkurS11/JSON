@@ -10,6 +10,11 @@
 </head>
 <body ng-controller="Ticket_ctrl">
 
+    <div>
+        No. of Rows to be displayed: <input type="number" step="1" min="0"
+        max="8" ng-model="rowlimit"/>
+    </div><br><br>
+
     <table border="1">
         <tr>
             <th>Priority<br>
@@ -25,10 +30,10 @@
             <th>Cost<br>
                 <input type="text" ng-model="search.Cost"></th>                
         </tr>
-        <tr ng-repeat="item in ticket_details | orderBy:'Assigned_to' | filter: search" >
+        <tr ng-repeat="item in ticket_details | orderBy:'Assigned_to' | filter: search | limitTo: rowlimit" >
             <td>{{item.Priority}}</td>
             <td>{{item.Assigned_to | uppercase }}</td>
-            <td>{{item.Date}}</td>
+            <td>{{item.Date | date: "dd/MM/yyyy"}}</td>
             <td>{{item.Time}}</td>
             <td>{{item.Status | lowercase }}</td>
             <td>{{item.Cost | currency }}</td>

@@ -6,4 +6,5 @@ tickets.controller("Ticket_ctrl", function($scope,$http)
     {
         $scope.ticket_details=response.records;
     });
+    $scope.rowlimit=8;
 });
