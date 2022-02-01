@@ -17,17 +17,15 @@
             <th>Date</th>               
             <th>Time</th>               
             <th>Status</th>               
-            <th>Team_level</th>                
-            <th>Affected_users</th>
+            <th>Cost</th>                
         </tr>
-        <tr ng-repeat="item in ticket_details">
+        <tr ng-repeat="item in ticket_details | orderBy:'Assigned_to' " >
             <td>{{item.Priority}}</td>
-            <td>{{item.Assigned_to}}</td>
+            <td>{{item.Assigned_to | uppercase }}</td>
             <td>{{item.Date}}</td>
             <td>{{item.Time}}</td>
-            <td>{{item.Status}}</td>
-            <td>{{item.Team_level}}</td>
-            <td>{{item.Affected_users}}</td>
+            <td>{{item.Status | lowercase }}</td>
+            <td>{{item.Cost}}</td>
         </tr>
     </table>
     
