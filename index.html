@@ -12,20 +12,26 @@
 
     <table border="1">
         <tr>
-            <th>Priority</th>
-            <th>Assigned_to</th>                
-            <th>Date</th>               
-            <th>Time</th>               
-            <th>Status</th>               
-            <th>Cost</th>                
+            <th>Priority<br>
+                <input type="text" ng-model="search.Priority"></th>
+            <th>Assigned_to<br>
+                <input type="text" ng-model="search.Assigned_to"></th>                
+            <th>Date<br>
+                <input type="text" ng-model="search.Date"></th>               
+            <th>Time<br>
+                <input type="text" ng-model="search.Time"></th>               
+            <th>Status<br>
+                <input type="text" ng-model="search.Status"></th>               
+            <th>Cost<br>
+                <input type="text" ng-model="search.Cost"></th>                
         </tr>
-        <tr ng-repeat="item in ticket_details | orderBy:'Assigned_to' " >
+        <tr ng-repeat="item in ticket_details | orderBy:'Assigned_to' | filter: search" >
             <td>{{item.Priority}}</td>
             <td>{{item.Assigned_to | uppercase }}</td>
             <td>{{item.Date}}</td>
             <td>{{item.Time}}</td>
             <td>{{item.Status | lowercase }}</td>
-            <td>{{item.Cost}}</td>
+            <td>{{item.Cost | currency }}</td>
         </tr>
     </table>
     
