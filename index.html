@@ -48,11 +48,9 @@
                 <input type="text" ng-model="search.Time"></th>               
             <th>Status<br>
                 <input type="text" ng-model="search.Status"></th>               
-            <th>Cost(in Dollar)<br>
+            <th>Cost<br>
                 <input type="text" ng-model="search.Cost"></th>                
-            <th ng-model="rupees">Cost(in Rupees)</th>               
-            </tr>
-
+        </tr>
         <tr ng-repeat="item in ticket_details | orderBy:'Assigned_to' | filter: search | limitTo: rowlimit" >
             <td>{{item.Priority}}</td>
             <td>{{item.Assigned_to | uppercase }}</td>
@@ -60,7 +58,6 @@
             <td>{{item.Time}}</td>
             <td>{{item.Status | lowercase }}</td>
             <td>{{item.Cost | currency }}</td>
-            <td>&#8377;{{item.Cost | rupees | number:0}}</td>
         </tr>
     </table>
 
