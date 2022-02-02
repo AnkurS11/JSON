@@ -22,7 +22,7 @@ var teams=angular.module("teams",[]);
 
 teams.controller("Team_ctrl", function($scope1,$http)
 {
-    $http.get("https://ankurs11.github.io/JSON/data.json")
+    $http.get("https://ankurs11.github.io/JSON/team.json")
     .success(function(response)
     {
         $scope1.team_details=response.team_data;
