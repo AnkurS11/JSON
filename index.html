@@ -7,6 +7,27 @@
     <title>User Tickets</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="Angular_JSON.js"></script>
+    <style>
+        tr:nth-child(odd) {background-color: #85a0e4;}
+        tr:nth-child(even) {background-color: #547feb;}
+
+        tr:hover{background-color: lightblue;}
+
+        table, th, td {
+                        border: 2px solid black;
+                        border-collapse: collapse;
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align:center;
+                        padding: 5px;
+                    }
+        
+        body{
+            font-family: "Roboto", sans-serif;
+            background-color:#dbdff8;
+        }
+
+    </style>
 </head>
 <body ng-controller="Ticket_ctrl">
 
@@ -15,7 +36,7 @@
         max="8" ng-model="rowlimit"/>
     </div><br><br>
 
-    <table border="1">
+    <table>
         <tr>
             <th>Priority<br>
                 <input type="text" ng-model="search.Priority"></th>
