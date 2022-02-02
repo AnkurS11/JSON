@@ -1,4 +1,4 @@
-{"ticket_data":[ 
+{"records":[ 
 {"Priority":3, "Assigned_to":"Priyanka","Date":"2021-11-05", "Time":"09:00:00", "Status":"Resolved", "Cost":200.23}, 
 {"Priority":4, "Assigned_to":"Ayushree","Date":"2021-12-25", "Time":"11:38:12", "Status":"In Progress", "Cost":40.53}, 
 {"Priority":3, "Assigned_to":"Adarsh","Date":"2022-01-04", "Time":"06:29:45", "Status":"In Progress", "Cost":210.00}, 
