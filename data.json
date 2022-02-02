@@ -7,5 +7,13 @@
 {"Priority":4, "Assigned_to":"Akshay","Date":"2021-12-25", "Time":"01:34:56", "Status":"Canclled", "Cost":26.15}, 
 {"Priority":3, "Assigned_to":"Pradeep","Date":"2022-01-04", "Time":"06:29:45", "Status":"On Hold", "Cost":244.21}, 
 {"Priority":2, "Assigned_to":"Amber","Date":"2022-02-05", "Time":"16:54:20", "Status":"In Progress", "Cost":321.45}
-]}
+]};
 
+{"Team_data":[
+{"Name":"Admin", "Email":"Admin@gmail.com", "Technology":"Credentials", "Location":"Onsite", "Team_level":1},
+{"Name":"BPO", "Email":"BPO@gmail.com", "Technology":"Software", "Location":"On-call", "Team_level":1},
+{"Name":"Development", "Email":"Development@gmail.com", "Technology":"Software", "Location":"Onsite", "Team_level":1},
+{"Name":"Email", "Email":"Email@gmail.com", "Technology":"Communications", "Location":"Offsite", "Team_level":2},
+{"Name":"Support", "Email":"Support@gmail.com", "Technology":"Login", "Location":"Offsite", "Team_level":3},
+{"Name":"System", "Email":"System@gmail.com", "Technology":"UI", "Location":"Onsite", "Team_level":2}
+]};
